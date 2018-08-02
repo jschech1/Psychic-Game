@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors Part 2
+    </title>
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+
+<body>
+
+    <div id="game">
+
+
+        <p> Press r, p or s to start playing!
+        </p>
+
+
+    </div>
+
+    <script src="assets.javascript/game.js"></script>
+
+        <!-- // Creates an array that lists out all of the options (Rock, Paper, or Scissors).
+        var computerChoices = ["r", "p", "s"];
+
+        var win = 0;
+        var lose = 0;
+        var tie = 0;
+
+        // This function is run whenever the user presses a key.
+        document.onkeyup = function (event) {
+
+            // Determines which key was pressed.
+            var userGuess = event.key;
+
+            // Randomly chooses a choice from the options array. This is the Computer's guess.
+            var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+
+
+            if ((userGuess === "r") || (userGuess === "p") || (userGuess === "s")) {
+
+                if ((userGuess === "r") && (computerGuess === "s")) {
+                    win++;
+                }
+                else if ((userGuess === "r") && (computerGuess === "p")) {
+                    lose++;
+                }
+
+                else if ((userGuess === "s") && (computerGuess === "r")) {
+                    lose++;
+                }
+
+                else if ((userGuess === "s") && (computerGuess === "p")) {
+                    win++;
+                }
+
+                else if ((userGuess === "p") && (computerGuess === "r")) {
+                    win++;
+                }
+
+                else if ((userGuess === "p") && (computerGuess === "s")) {
+                    lose++;
+                }
+
+                else if ((userGuess === computerGuess)) {
+
+                    tie++;
+                }
+
+                var html =
+                    "<p>You chose: " + userGuess + "</p>" +
+                    "<p>The computer chose: " + computerGuess + "</p>" +
+                    "<p>win: " + win + "</p>" +
+                    "<p>lose: " + lose + "</p>" +
+                    "<p>tie: " + tie + "</p>";
+
+                document.querySelector("#game").innerHTML = html;
+            }
+        }
+
+
+
+    </script> -->
+
+</body>
+
+</html>
